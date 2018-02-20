@@ -1,7 +1,32 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "Thomas Hines Guitars";
 }
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
 
-<p>Use this area to provide additional information.</p>
+<p>Thomas Hines has been making custom guitars for the last 10 years.  He has done this in a local shop.  He used to play bass in a band.  He plays bass and guitar.  .</p>
+
+<div class="fb-page"
+     data-tabs="timeline,events,messages"
+     data-href="https://www.facebook.com/Thomas-Hines-Guitars-167544839961266/"
+     data-height="1000"
+     data-width="720"> </div>
+<html>
+<body>
+    <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.5"
+            async></script>
+
+    <script type="text/javascript">
+        var feed = new Instafeed({
+            get: 'tagged',
+            tagName: 'awesome',
+            clientId: 'YOUR_CLIENT_ID'
+        });
+        feed.run();
+    </script>
+</body>
+
+
+</html>
+
+
