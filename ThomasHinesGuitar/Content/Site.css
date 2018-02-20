@@ -30,17 +30,17 @@ textarea {
 }
 
 .slide1 {
-    background-image: url("../Images/guitar5.jpg");
+    background-image: url("../Content/Images/guitar5.jpg");
     background-size: cover;
 }
 
 .slide2 {
-    background-image: url("../Images/guitar2.jpg");
+    background-image: url("../Content/Images/guitar2.jpg");
     background-size: cover;
 }
 
 .slide3 {
-    background-image: url("../Images/guitar3.jpg");
+    background-image: url("../Content/Images/guitar3.jpg");
     background-size: cover;
 }
 /* Carousel Fade Effect */
