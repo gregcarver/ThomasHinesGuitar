@@ -1,0 +1,1 @@
+﻿<script type="text/javascript" src="path/to/instafeed.min.js"></script>
