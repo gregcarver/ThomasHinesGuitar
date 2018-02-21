@@ -22,3 +22,52 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.slide1, .slide2, .slide3 {
+    min-height: 650px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.slide1 {
+    background-image: url("../Content/Images/guitar5.jpg");
+    background-size: cover;
+}
+
+.slide2 {
+    background-image: url("../Content/Images/guitar2.jpg");
+    background-size: cover;
+}
+
+.slide3 {
+    background-image: url("../Content/Images/guitar3.jpg");
+    background-size: cover;
+}
+/* Carousel Fade Effect */
+.carousel.carousel-fade .item {
+    -webkit-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    /*-ms-transition: opacity 1s linear;*/
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 1s linear;
+    opacity: .5;
+}
+
+.carousel.carousel-fade .active.item {
+    opacity: 1;
+}
+
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.carousel-overlay {
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    left: 0;
+}
