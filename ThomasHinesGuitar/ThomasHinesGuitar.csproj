@@ -200,12 +200,18 @@
     <Compile Include="Migrations\201802211506437_initial.Designer.cs">
       <DependentUpon>201802211506437_initial.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802211937477_a_AdminMain.cs" />
+    <Compile Include="Migrations\201802211937477_a_AdminMain.Designer.cs">
+      <DependentUpon>201802211937477_a_AdminMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AdminMain.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\AdminMainViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -287,6 +293,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201802211506437_initial.resx">
       <DependentUpon>201802211506437_initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802211937477_a_AdminMain.resx">
+      <DependentUpon>201802211937477_a_AdminMain.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
