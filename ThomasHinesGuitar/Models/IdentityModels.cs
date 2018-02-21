@@ -20,6 +20,8 @@ namespace ThomasHinesGuitar.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<CustomerOrder> CustomerOrders { get; set; }
+       
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
