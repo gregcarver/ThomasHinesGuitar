@@ -1,7 +1,20 @@
-﻿
+﻿@model ThomasHinesGuitar.Models.AdminMain
 @{
     ViewBag.Title = "AdminMainPage";
 }
 
-<h2>AdminMainPage</h2>
+@using (Html.BeginForm("AdminMainPage", "AdminMain"))
+{
+    <h2>AdminMainPage</h2>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Contact)
+        @Html.TextBoxFor(m => m.Contact, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(m => m.Location)
+        @Html.TextBoxFor(m => m.Location, new { @class = "form-control" })
 
+    </div>
+    <button type="submit" value="Save" class="btn btn-primary">Submit</button>
+
+}
