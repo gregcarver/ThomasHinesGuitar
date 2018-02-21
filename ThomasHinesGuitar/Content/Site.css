@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
-    padding-bottom: 20px;
+  
+    background-color: #FFFACD;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -72,21 +73,44 @@ textarea {
     left: 0;
 }
 .navbar-inverse {
-    background: url("../Content/Images/quiltedmaple3.jpg");
-   
+    background: url("../Content/Images/burledwood3.jpg");
+    height:75px;
+    
 }
 .footerStyle {
-    background: url("../Content/Images/quiltedmaple3.jpg");
+    background: url("../Content/Images/burledwood3.jpg");
     color: white;
-    height: 175px;
-    line-height: 175px;
+    height: 150px;
+    line-height: 150px;
     font-size: 36px;
     text-align: center;
     
 }
 .navbar-inverse .navbar-nav > li > a {
     color: white;
+    font-size: 24px;
+    line-height: 50px;
 }
 .navbar-inverse .navbar-brand {
     color: white;
+    font-size: 24px;
+    line-height: 50px;
+}
+.jumbotron {
+    padding: 30px;
+    
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    color: inherit;
+    background-color: #6D1616;
+    color: White;
+    margin-top:45px;
+    border-radius:40px;
+}
+.container .jumbotron {
+    border-radius: 40px;
+}
+p {
+     margin: 0 0 0; 
 }
