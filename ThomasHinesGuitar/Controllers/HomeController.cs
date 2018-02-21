@@ -22,7 +22,7 @@ namespace ThomasHinesGuitar.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Sample message";
 
             return View();
         }
