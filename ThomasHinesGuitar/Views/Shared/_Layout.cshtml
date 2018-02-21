@@ -20,8 +20,8 @@
                 @Html.ActionLink("Thomas Hines Guitars", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                <ul class="nav navbar-nav " >
+                    <li style="color:white">@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact Us", "Contact", "Home")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
@@ -31,11 +31,13 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - Thomas Hines Guitars</p>
-        </footer>
-    </div>
 
+    </div>
+    <footer class="footerStyle">
+        <i class="fa fa-facebook-official" style="font-size:48px;color:red"></i>
+        <p>&copy; @DateTime.Now.Year - Thomas Hines Guitars</p>
+
+    </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

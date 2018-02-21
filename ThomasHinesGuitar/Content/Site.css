@@ -71,3 +71,22 @@ textarea {
     right: 0;
     left: 0;
 }
+.navbar-inverse {
+    background: url("../Content/Images/quiltedmaple3.jpg");
+   
+}
+.footerStyle {
+    background: url("../Content/Images/quiltedmaple3.jpg");
+    color: white;
+    height: 175px;
+    line-height: 175px;
+    font-size: 36px;
+    text-align: center;
+    
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+.navbar-inverse .navbar-brand {
+    color: white;
+}
