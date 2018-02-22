@@ -20,10 +20,9 @@
                 @Html.ActionLink("Thomas Hines Guitars", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Thomas Hines Guitars", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About Thomas Hines", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact Thomas Hines", "Contact", "Home")</li>
+                <ul class="nav navbar-nav " >
+                    <li style="color:white">@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact Us", "Create", "ContactViewModels")</li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -32,11 +31,13 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
 
+    </div>
+    <footer class="footerStyle">
+
+        <p>&copy; @DateTime.Now.Year - Thomas Hines Guitars</p>
+        
+    </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

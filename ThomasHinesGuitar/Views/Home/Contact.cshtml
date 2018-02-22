@@ -1,22 +1,65 @@
-﻿@{
+﻿
+
+@{
     ViewBag.Title = "Contact";
+    ViewData["Title"] = "Home Page";
 }
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
 
+<script src="~/lib/jquery-validation/dist/jquery.validate.min.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"></script>
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <div>
-    <address style="float: left; padding-right: 50px;">
-        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=12&center=31.1052%2C-87.0722&key=AIzaSyCBUlPO5q8kIbyPKmcc5eD9BadAvijMZw4" allowfullscreen></iframe><br />
-    </address>
+    <div class="col-md-6">
+        <div>
+            @if (ViewBag.Message == null)
+            {
+                <div>
+                    <form method="post">
+                        <div class="form-group">
+                            <label asp-for="Name">Name</label>
+                            <input asp-for="Name" class="form-control" />
+                            <span asp-validation-for="Name"
+                                  class="text-muted"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Email">Email</label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email"
+                                  class="text-muted"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Subject">Subject</label>
+                            <input asp-for="Subject" class="form-control" />
+                            <span asp-validation-for="Subject"
+                                  class="text-muted"></span>
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Message">Message</label>
+                            <textarea rows="5" cols="15"
+                                      asp-for="Message" class="form-control"></textarea>
+                            <span asp-validation-for="Message"
+                                  class="text-muted"></span>
+                        </div>
+                        <div>
+                            <button type="submit"
+                                    class="btn btn-success">
+                                Send
+                            </button>
+                        </div>
 
-    <address>
-        123 Main Street<br />
-        Brewton, AL 36426<br />
-        <abbr title="Office Phone">P:</abbr>
-        251.867.5418
-    </address>
+                    </form>
+                </div>
+            }
+        </div>
+
+        <div>
+            <div>
+                @if (ViewBag.Message != null)
+                {
+                    <div>@ViewBag.Message</div>
+                }
+            </div>
+        </div>
+    </div>
+
 </div>
-
-<address>
-    <strong>Email: </strong><a href="mailto:thomashines1981@gmail.com">thomashines1981@gmail.com</a><br />
-</address>
