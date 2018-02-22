@@ -10,32 +10,24 @@ using ThomasHinesGuitar.ViewModels;
 namespace ThomasHinesGuitar.Controllers
 {
     public class AdminMainController : Controller
-    {
-        private ApplicationDbContext _context;
+    { 
+
         // GET: AdminMAin
 
-        public AdminMainController()
-        {
-            _context = new ApplicationDbContext();
-        }
-
+        [HttpGet]
         public ActionResult AdminMainPage()
         {
-            var viewModel = new AdminMainViewModel
-            {
-                AdminMainList = _context.AdminMain.ToList()
-            };
+            
             return View();
         }
 
         [HttpPost]
-        public ActionResult AdminMainPage(AdminMainViewModel viewModel)
+        public ActionResult AdminMainPage(AdminMain main)
         {
-            //var adminId = User.Identity.GetUserId();
-            //var contacts = _context.Users.Single(u => u.Id == adminId);
-            //var location = _context.AdminMain.Single();
-
-
+            AdminMain newmain = new AdminMain();
+            string result = newmain.InsertContactDetails(main);
+            ViewData["Result"] = result;
+            ModelState.Clear();
             return View();
         }
 

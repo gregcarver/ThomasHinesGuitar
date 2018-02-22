@@ -17,4 +17,21 @@
     </div>
     <button type="submit" value="Save" class="btn btn-primary">Submit</button>
 
+    <div class="row">
+        <div class="col-lg-3">
+            @Html.DisplayFor(m => m.Contact)
+            @Html.DisplayFor(m => m.Location)
+        </div>
+
+    </div>
 }
+
+@*@{
+    if (ViewData["Result"] != "" && ViewData["Result"] != null)
+    {
+        ViewData["Result"] = null;
+        <script type="text/javascript" language="javascript">
+                    alert("Details saved Successfully");
+        </script>
+        }
+}*@

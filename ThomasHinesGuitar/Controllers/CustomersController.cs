@@ -17,14 +17,14 @@ namespace ThomasHinesGuitar.Controllers
         {
             _context = new ApplicationDbContext();
         }
-        [Authorize]
-        public ActionResult Create()
+        
+        public ActionResult CustomerView()
         {
-            var viewModel = new CustomerOrderViewModel
-            {
-                //CustomerOrder = _context.CustomerOrders.ToList()
-            };
-            return View(viewModel);
+            //var viewModel = new CustomerOrderViewModel
+            //{
+            //    //CustomerOrders = _context.CustomerOrders.ToList()
+            //};
+            return View();
         }
     }
 }
