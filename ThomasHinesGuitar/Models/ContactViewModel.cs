@@ -22,7 +22,11 @@ namespace ThomasHinesGuitar.Models
         [Required]
         public string Subject { get; set; }
 
+        //[Required]
+        //public string Message { get; set; }
+
         [Required]
+        [DataType(DataType.MultilineText)]
         public string Message { get; set; }
     }
 }
