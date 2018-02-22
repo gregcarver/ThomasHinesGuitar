@@ -26,8 +26,9 @@ textarea {
 
 .slide1, .slide2, .slide3 {
     min-height: 650px;
-    background-size: cover;
+    /*background-size: cover;*/
     background-position: center center;
+    border-radius:40px;
 }
 
 .slide1 {
@@ -122,4 +123,9 @@ p {
     border-radius:20px;
     margin-top:15px;
     font-size:18px;
+}
+.facebookButt {
+    height: 50%;
+    width: 50%;
+    background-image: url('Images/facebook.png');
 }
