@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
-    padding-bottom: 20px;
+  
+    background-color: #FFFACD;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +22,110 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+.slide1, .slide2, .slide3 {
+    min-height: 650px;
+    /*background-size: cover;*/
+    background-position: center center;
+    border-radius:40px;
+}
+
+.slide1 {
+    background-image: url("../Content/Images/guitar5.jpg");
+    background-size: cover;
+}
+
+.slide2 {
+    background-image: url("../Content/Images/guitar2.jpg");
+    background-size: cover;
+}
+
+.slide3 {
+    background-image: url("../Content/Images/guitar3.jpg");
+    background-size: cover;
+}
+/* Carousel Fade Effect */
+.carousel.carousel-fade .item {
+    -webkit-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    /*-ms-transition: opacity 1s linear;*/
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 1s linear;
+    opacity: .5;
+}
+
+.carousel.carousel-fade .active.item {
+    opacity: 1;
+}
+
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.carousel-overlay {
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    left: 0;
+}
+.navbar-inverse {
+    background: url("../Content/Images/burledwood3.jpg");
+    height:75px;
+    
+}
+.footerStyle {
+    background: url("../Content/Images/burledwood3.jpg");
+    color: white;
+    height: 150px;
+    line-height: 150px;
+    font-size: 36px;
+    text-align: center;
+    
+}
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+    font-size: 24px;
+    line-height: 50px;
+}
+.navbar-inverse .navbar-brand {
+    color: white;
+    font-size: 24px;
+    line-height: 50px;
+}
+.jumbotron {
+    padding: 30px;
+    
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.1428571435;
+    color: inherit;
+    background-color: #6D1616;
+    color: White;
+    margin-top:45px;
+    border-radius:40px;
+}
+.container .jumbotron {
+    border-radius: 40px;
+}
+p {
+     margin: 0 0 0; 
+}
+.btn-default {
+    border-color: #cccccc;
+    background: url(../Content/Images/burledwood3.jpg);
+    color: white;
+    width:150px;
+    border-radius:20px;
+    margin-top:15px;
+    font-size:18px;
+}
+.facebookButt {
+    height: 50%;
+    width: 50%;
+    background-image: url('Images/facebook.png');
 }

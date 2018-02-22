@@ -1,0 +1,80 @@
+﻿@model ThomasHinesGuitar.Models.ContactViewModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Contact Form</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div>
+        <address style="float: left; padding-right: 50px;">
+            <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=12&center=31.1052%2C-87.0722&key=AIzaSyCBUlPO5q8kIbyPKmcc5eD9BadAvijMZw4" allowfullscreen></iframe><br />
+        </address>
+
+        @*<address>
+            123 Main Street<br />
+            Brewton, AL 36426<br />
+            <abbr title="Office Phone">P:</abbr>
+            251.867.5418
+        </address>*@
+    </div>
+
+    <div class="col-lg-2">
+        <div class="form-horizontal">
+            <h4>Enter your information with a message.</h4>
+            <hr />
+            @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+            <div class="form-group">
+                @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Email, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Subject, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Subject, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Subject, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-md-offset-2 col-md-10">
+                    <p><button href="@Url.Action("Index", "Home")" class="btn btn-default btn-group-sm" value="submit" style="float:left">Create &raquo;</button></p>
+                </div>
+            </div>
+        </div>
+
+        
+        <div>
+            @Html.ActionLink("Back to Home Page", "Index", "Home")
+        </div>
+    </div>
+}
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

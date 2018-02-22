@@ -190,6 +190,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ContactViewModelsController.cs" />
+    <Compile Include="Controllers\AdminMainController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -212,8 +214,18 @@
     <Compile Include="Migrations\201802221416109_d_2.Designer.cs">
       <DependentUpon>201802221416109_d_2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201802212149319_gitfix.cs" />
+    <Compile Include="Migrations\201802212149319_gitfix.Designer.cs">
+      <DependentUpon>201802212149319_gitfix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Migrations\201802212026382_mignewnow.cs" />
+    <Compile Include="Migrations\201802212026382_mignewnow.Designer.cs">
+      <DependentUpon>201802212026382_mignewnow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\ContactViewModel.cs" />
     <Compile Include="Models\AdminMain.cs" />
     <Compile Include="Models\CustomerOrder.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -225,10 +237,25 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\guitar1.jpg" />
+    <Content Include="Content\Images\burledwood.jpg" />
+    <Content Include="Content\Images\darkwood.jpg" />
+    <Content Include="Content\Images\facebook.png" />
+    <Content Include="Content\Images\guitar2.jpg" />
+    <Content Include="Content\Images\guitar3.jpg" />
+    <Content Include="Content\Images\guitar4.jpg" />
+    <Content Include="Content\Images\guitar5.jpg" />
+    <Content Include="Content\Images\quiltedmaple.jpg" />
+    <Content Include="Content\Images\quiltedmaple2.jpg" />
+    <Content Include="Content\Images\quiltedmaple3.jpg" />
+    <Content Include="Content\Images\woodbackground.jpg" />
+    <Content Include="Content\Images\guitar6.jpg" />
+    <Content Include="Content\Images\ThomasHines.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Polaroid.jpg" />
     <Content Include="Notes\Admin Group\Database tables needed.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -236,6 +263,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\Facebook and Instagram Scripts\Facebook API.js" />
+    <Content Include="Scripts\Facebook and Instagram Scripts\Instagram.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -280,9 +309,15 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\ContactViewModels\Create.cshtml" />
+    <Content Include="Views\ContactViewModels\Delete.cshtml" />
+    <Content Include="Views\ContactViewModels\Details.cshtml" />
+    <Content Include="Views\ContactViewModels\Edit.cshtml" />
+    <Content Include="Views\ContactViewModels\Index.cshtml" />
     <Content Include="Views\AdminMain\AdminMainPage.cshtml" />
     <Content Include="Views\CustomerView.cshtml" />
     <Content Include="Views\CustomerOrder\CustomerOrderView.cshtml" />
+    <Content Include="Views\CustomerOrder\CustomerView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -314,6 +349,14 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802221416109_d_2.resx">
       <DependentUpon>201802221416109_d_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802212149319_gitfix.resx">
+      <DependentUpon>201802212149319_gitfix.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201802212026382_mignewnow.resx">
+      <DependentUpon>201802212026382_mignewnow.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

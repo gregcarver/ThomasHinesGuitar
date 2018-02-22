@@ -34,5 +34,7 @@ namespace ThomasHinesGuitar.Models
             
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<ThomasHinesGuitar.Models.ContactViewModel> ContactViewModels { get; set; }
     }
 }
