@@ -193,7 +193,6 @@
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="FormViewModels\CustomerOrderViewModel.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -204,6 +203,14 @@
     <Compile Include="Migrations\201802211937477_a_AdminMain.cs" />
     <Compile Include="Migrations\201802211937477_a_AdminMain.Designer.cs">
       <DependentUpon>201802211937477_a_AdminMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802212151301_d_.cs" />
+    <Compile Include="Migrations\201802212151301_d_.Designer.cs">
+      <DependentUpon>201802212151301_d_.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802221416109_d_2.cs" />
+    <Compile Include="Migrations\201802221416109_d_2.Designer.cs">
+      <DependentUpon>201802221416109_d_2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -274,10 +281,12 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\AdminMain\AdminMainPage.cshtml" />
-    <Content Include="Views\Customer\CustomerView.cshtml" />
+    <Content Include="Views\CustomerView.cshtml" />
+    <Content Include="Views\CustomerOrder\CustomerOrderView.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="FormViewModels\" />
     <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
@@ -299,6 +308,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201802211937477_a_AdminMain.resx">
       <DependentUpon>201802211937477_a_AdminMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802212151301_d_.resx">
+      <DependentUpon>201802212151301_d_.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802221416109_d_2.resx">
+      <DependentUpon>201802221416109_d_2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using ThomasHinesGuitar.FormViewModels;
 using ThomasHinesGuitar.Models;
+using ThomasHinesGuitar.ViewModels;
+
 
 namespace ThomasHinesGuitar.Controllers
 {
@@ -17,14 +18,21 @@ namespace ThomasHinesGuitar.Controllers
         {
             _context = new ApplicationDbContext();
         }
-        [Authorize]
-        public ActionResult Create()
+
+        [HttpGet]
+        public ActionResult CustomerOrderView()
         {
-            var viewModel = new CustomerOrderViewModel
-            {
-                //CustomerOrder = _context.CustomerOrders.ToList()
-            };
-            return View(viewModel);
+            return View();
+        }
+        //[Authorize]
+        [HttpPost]
+        public ActionResult CustomerOrderView(CustomerOrder order)
+        {
+            CustomerOrder newOrder = new CustomerOrder();
+            string result = newOrder.insertCustomerDetails(order);
+            ViewData["Success"] = result;
+            ModelState.Clear();           
+            return View();
         }
     }
 }
