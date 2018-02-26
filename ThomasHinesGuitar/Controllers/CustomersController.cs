@@ -13,7 +13,7 @@ namespace ThomasHinesGuitar.Controllers
     {
         private ApplicationDbContext _context;
         // GET: AdminMAin
-
+        //private ApplicationDbContext db = new ApplicationDbContext();
         public AdminController()
         {
             _context = new ApplicationDbContext();
@@ -32,6 +32,24 @@ namespace ThomasHinesGuitar.Controllers
             string result = newOrder.insertCustomerDetails(order);
             ViewData["Success"] = result;
             ModelState.Clear();           
+            return View();
+        }
+        [HttpGet]
+        public ActionResult customerOrderCheck()
+        {
+            var customerIDlist = db.CustomerOrder.ToList();
+            return View(customerIDlist);
+        }
+        [HttpGet]
+        public ActionResult aboutView()
+        {
+            return View();
+        }
+        [HttpPost]
+        public ActionResult aboutView(AboutModel aboutobj)
+        {
+            AboutModel about = new AboutModel();
+            string result = about.insertAboutView(aboutobj);
             return View();
         }
     }

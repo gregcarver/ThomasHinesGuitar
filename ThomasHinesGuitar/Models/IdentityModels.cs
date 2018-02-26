@@ -23,6 +23,8 @@ namespace ThomasHinesGuitar.Models
         public DbSet<AdminMain> AdminMain { get; set; }
 
         public DbSet<CustomerOrder> CustomerOrder { get; set; }
+        
+        public DbSet<AboutModel> AboutModel { get; set; }
        
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)

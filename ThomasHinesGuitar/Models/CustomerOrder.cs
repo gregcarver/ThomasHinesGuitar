@@ -10,8 +10,9 @@ namespace ThomasHinesGuitar.Models
 
     public class CustomerOrder
     {
-       
+       [Key]
         public int Id { get; set;}
+
         [Required]
         [EmailAddress]
         [StringLength(255)]
@@ -19,32 +20,24 @@ namespace ThomasHinesGuitar.Models
         [Required]
         public string Name { get; set; }
         
-        public int orderNumber { get; set; }
+        //public int orderNumber { get; set; }
         public DateTime dateAdded { get; set; }
 
-        SqlConnection fluff = new SqlConnection(@"Data Source = (LocalDb)\MSSQLLocalDB; AttachDbFilename=C:\Users\David Dannheim\Desktop\GitHub (Project for THG)\ThomasHinesGuitar\App_Data\aspnet-ThomasHinesGuitar-20180219110451.mdf;Initial Catalog = aspnet-ThomasHinesGuitar-20180219110451;Integrated Security = True");
-        SqlCommand numberAndDate = new SqlCommand();
-        
         public string insertCustomerDetails (CustomerOrder obj)
         {
-            obj.orderNumber = obj.Id;
-            obj.dateAdded = DateTime.Now;
-            numberAndDate.CommandText = "Insert into CustomerOrders values ('" + obj.Email + "','" + obj.Name + "','" + obj.orderNumber + "','" + obj.dateAdded + "')";
-            numberAndDate.Connection = fluff;
-
+                ApplicationDbContext db = new ApplicationDbContext();
+                db.CustomerOrder.Add(obj).dateAdded = DateTime.Now;
+                
             try
             {
-                fluff.Open();
-                numberAndDate.ExecuteNonQuery();
-                fluff.Close();
-                return ("Success");
+                db.CustomerOrder.Add(obj);
+                db.SaveChanges();
+                return "Success";
             }
-            catch (Exception es)
+            catch (Exception ex)
             {
-                throw es;
+                throw ex;
             }
-
-
 
         }
 

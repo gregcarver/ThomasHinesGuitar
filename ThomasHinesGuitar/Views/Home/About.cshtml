@@ -1,10 +1,12 @@
-﻿@{
+﻿@model IEnumerable<ThomasHinesGuitar.Models.AboutModel>
+@{
     ViewBag.Title = "About";
 }
 
 
 <p></p>
 <div class="w3 row">
+    <br />
     <h1>About Thomas Hines</h1>
 
     <div class="col-lg-5">
@@ -15,7 +17,8 @@
         </div>
 
         <div style="padding-top: 600px">
-            Thomas Hines has been making guitars for 10 years.  He has done this in a local shop.  He used to play bass in a band.  He plays bass and guitar.
+            @* Will replace with dynamic entry later on.*@
+           @Html.DisplayFor(x => x.LastOrDefault().aboutView)
         </div>
 
     </div>
