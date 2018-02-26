@@ -10,22 +10,31 @@
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    <div class="row">
-        <div class="col-lg-6">
+    <div class="container">
+        <div class="col-lg-6" style="float: left">
             <div>
                 <address style="float: left; padding-right: 50px;">
-                    <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=12&center=31.1052%2C-87.0722&key=AIzaSyCBUlPO5q8kIbyPKmcc5eD9BadAvijMZw4" allowfullscreen></iframe><br />
+                    <iframe width="500" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/view?zoom=12&center=31.1052%2C-87.0722&key=AIzaSyCBUlPO5q8kIbyPKmcc5eD9BadAvijMZw4" allowfullscreen></iframe><br />
                 </address>
 
-                @*<address>
+                <div>
+                    <address>
                         123 Main Street<br />
                         Brewton, AL 36426<br />
                         <abbr title="Office Phone">P:</abbr>
                         251.867.5418
-                    </address>*@
+                    </address>
+                </div>
+
+                @*<address>
+            123 Main Street<br />
+            Brewton, AL 36426<br />
+            <abbr title="Office Phone">P:</abbr>
+            251.867.5418
+        </address>*@
             </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6" style="float: right">
             <div class="col-lg-10">
                 <div class="form-horizontal">
                     <h4>Send a message</h4>
@@ -78,14 +87,7 @@
                     </div>*@
             </div>
         </div>
-        <div>
-            <address>
-                123 Main Street<br />
-                Brewton, AL 36426<br />
-                <abbr title="Office Phone">P:</abbr>
-                251.867.5418
-            </address>
-        </div>
+
     </div>
 
 }
