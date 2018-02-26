@@ -1,7 +1,8 @@
 ﻿body {
     padding-top: 50px;
-  
-    background-color: #FFFACD;
+    font-family: 'Chau Philomene One', sans-serif;
+    background-color: #DEDCD3;
+    
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -80,40 +81,40 @@ textarea {
 }
 .footerStyle {
     background: url("../Content/Images/burledwood3.jpg");
-    color: white;
+    color: #DEDCD3;
     height: 150px;
     line-height: 150px;
     font-size: 36px;
     text-align: center;
-    
 }
 .navbar-inverse .navbar-nav > li > a {
-    color: white;
+    color: #DEDCD3;
     font-size: 24px;
     line-height: 50px;
 }
 .navbar-inverse .navbar-brand {
-    color: white;
+    color: #DEDCD3;
     font-size: 24px;
     line-height: 50px;
 }
 .jumbotron {
     padding: 30px;
-    
+    height: 100vh;
+    color: #DEDCD3;
     font-size: 21px;
     font-weight: 200;
     line-height: 2.1428571435;
-    color: inherit;
+    
     background-color: #6D1616;
-    color: White;
-    margin-top:45px;
-    border-radius:40px;
+    margin-top: 45px;
+    border-radius: 40px;
 }
 .container .jumbotron {
     border-radius: 40px;
 }
 p {
-     margin: 0 0 0; 
+    margin: 0 0 0;
+    font-family: 'Chau Philomene One', sans-serif;
 }
 .btn-default {
     border-color: #cccccc;
