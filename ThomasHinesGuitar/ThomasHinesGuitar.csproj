@@ -202,14 +202,6 @@
     <Compile Include="Migrations\201802211506437_initial.Designer.cs">
       <DependentUpon>201802211506437_initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201802222055454_modeldata.cs" />
-    <Compile Include="Migrations\201802222055454_modeldata.Designer.cs">
-      <DependentUpon>201802222055454_modeldata.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201802251926213_mig1.cs" />
-    <Compile Include="Migrations\201802251926213_mig1.Designer.cs">
-      <DependentUpon>201802251926213_mig1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ContactViewModel.cs" />
@@ -329,12 +321,6 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201802211506437_initial.resx">
       <DependentUpon>201802211506437_initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802222055454_modeldata.resx">
-      <DependentUpon>201802222055454_modeldata.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802251926213_mig1.resx">
-      <DependentUpon>201802251926213_mig1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
