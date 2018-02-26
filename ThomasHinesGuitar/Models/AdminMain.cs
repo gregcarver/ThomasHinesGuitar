@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Net;
 using System.Web;
+using System.Web.Mvc;
 
 namespace ThomasHinesGuitar.Models
 {
@@ -10,35 +13,39 @@ namespace ThomasHinesGuitar.Models
     {
         public int Id { get; set; }
 
+        [Required]
         public string Contact { get; set; }
+        [Required]
         public string Location { get; set; }
 
-        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=" + Environment.ExpandEnvironmentVariables("%UserProfile%") + @"\Source\Repos\ThomasHinesGuitar\ThomasHinesGuitar\App_Data\aspnet-ThomasHinesGuitar-20180219110451.mdf;Initial Catalog=aspnet-ThomasHinesGuitar-20180219110451;Integrated Security=True");
-        SqlCommand cam = new SqlCommand();
 
-        public string InsertContactDetails(AdminMain obj)
+        public string InsertContactDetails(AdminMain inMain)
         {
-            cam.CommandText = "Insert into AdminMains values('" + obj.Contact
-                + "','" + obj.Location + "')";
-            cam.Connection = conn;
             try
             {
-                conn.Open();
-                cam.ExecuteNonQuery();
-                conn.Close();
-                return ("Success");
+                ApplicationDbContext db = new ApplicationDbContext();
+                db.AdminMain.Add(inMain);
+                db.SaveChanges();
+                return "Success";
             }
-            catch (Exception es)
+            catch (Exception ex)
             {
-                throw es;
+                throw ex;
             }
         }
-        public string PullContactDetails(AdminMain obj)
+        public AdminMain PullContactDetails(AdminMain inMain)
         {
-            cam.CommandText = "SELECT TOP 1  FROM AdminMains Order BY Id DESC";
-            return ("something");
+            try
+            {
+                ApplicationDbContext db = new ApplicationDbContext();
+                inMain = db.AdminMain.LastOrDefault();
+                return inMain;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
-
 
     }
 }

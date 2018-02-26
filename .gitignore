@@ -259,3 +259,9 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/ThomasHinesGuitar/Migrations/201802222055454_modeldata.cs
+/ThomasHinesGuitar/Migrations/201802222055454_modeldata.Designer.cs
+/ThomasHinesGuitar/Migrations/201802222055454_modeldata.resx
+/ThomasHinesGuitar/Migrations/201802251926213_mig1.cs
+/ThomasHinesGuitar/Migrations/201802251926213_mig1.Designer.cs
+/ThomasHinesGuitar/Migrations/201802251926213_mig1.resx

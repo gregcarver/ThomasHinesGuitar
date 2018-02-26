@@ -202,26 +202,13 @@
     <Compile Include="Migrations\201802211506437_initial.Designer.cs">
       <DependentUpon>201802211506437_initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201802211937477_a_AdminMain.cs" />
-    <Compile Include="Migrations\201802211937477_a_AdminMain.Designer.cs">
-      <DependentUpon>201802211937477_a_AdminMain.cs</DependentUpon>
+    <Compile Include="Migrations\201802222055454_modeldata.cs" />
+    <Compile Include="Migrations\201802222055454_modeldata.Designer.cs">
+      <DependentUpon>201802222055454_modeldata.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201802212151301_d_.cs" />
-    <Compile Include="Migrations\201802212151301_d_.Designer.cs">
-      <DependentUpon>201802212151301_d_.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201802221416109_d_2.cs" />
-    <Compile Include="Migrations\201802221416109_d_2.Designer.cs">
-      <DependentUpon>201802221416109_d_2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201802212149319_gitfix.cs" />
-    <Compile Include="Migrations\201802212149319_gitfix.Designer.cs">
-      <DependentUpon>201802212149319_gitfix.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Migrations\201802212026382_mignewnow.cs" />
-    <Compile Include="Migrations\201802212026382_mignewnow.Designer.cs">
-      <DependentUpon>201802212026382_mignewnow.cs</DependentUpon>
+    <Compile Include="Migrations\201802251926213_mig1.cs" />
+    <Compile Include="Migrations\201802251926213_mig1.Designer.cs">
+      <DependentUpon>201802251926213_mig1.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -314,15 +301,17 @@
     <Content Include="Views\ContactViewModels\Details.cshtml" />
     <Content Include="Views\ContactViewModels\Edit.cshtml" />
     <Content Include="Views\ContactViewModels\Index.cshtml" />
-    <Content Include="Views\AdminMain\AdminMainPage.cshtml" />
+    <Content Include="Views\Admin\AdminMainPage.cshtml" />
     <Content Include="Views\CustomerView.cshtml" />
-    <Content Include="Views\CustomerOrder\CustomerOrderView.cshtml" />
+    <Content Include="Views\Admin\CustomerOrderView.cshtml" />
     <Content Include="Views\CustomerOrder\CustomerView.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Admin\AdminLookPage.cshtml" />
+    <Content Include="Views\Admin\AdminCheckPage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="FormViewModels\" />
-    <Folder Include="Images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -341,22 +330,11 @@
     <EmbeddedResource Include="Migrations\201802211506437_initial.resx">
       <DependentUpon>201802211506437_initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802211937477_a_AdminMain.resx">
-      <DependentUpon>201802211937477_a_AdminMain.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201802222055454_modeldata.resx">
+      <DependentUpon>201802222055454_modeldata.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802212151301_d_.resx">
-      <DependentUpon>201802212151301_d_.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802221416109_d_2.resx">
-      <DependentUpon>201802221416109_d_2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802212149319_gitfix.resx">
-      <DependentUpon>201802212149319_gitfix.cs</DependentUpon>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201802212026382_mignewnow.resx">
-      <DependentUpon>201802212026382_mignewnow.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201802251926213_mig1.resx">
+      <DependentUpon>201802251926213_mig1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

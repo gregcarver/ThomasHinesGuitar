@@ -9,12 +9,12 @@ using ThomasHinesGuitar.ViewModels;
 
 namespace ThomasHinesGuitar.Controllers
 {
-    public class CustomerOrderController : Controller
+    public partial class AdminController : Controller
     {
         private ApplicationDbContext _context;
         // GET: AdminMAin
 
-        public CustomerOrderController()
+        public AdminController()
         {
             _context = new ApplicationDbContext();
         }
