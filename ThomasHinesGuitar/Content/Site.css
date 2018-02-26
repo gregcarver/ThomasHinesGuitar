@@ -125,6 +125,11 @@ p {
     margin-top:15px;
     font-size:18px;
 }
+.btn-default:hover {
+    background: url(../Content/Images/burledwood3.jpg);
+    color:#9f7000;
+}
+
 .facebookButt {
     height: 50%;
     width: 50%;
