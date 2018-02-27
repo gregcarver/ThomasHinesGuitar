@@ -202,29 +202,13 @@
     <Compile Include="Migrations\201802211506437_initial.Designer.cs">
       <DependentUpon>201802211506437_initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201802261906252_d_.cs" />
-    <Compile Include="Migrations\201802261906252_d_.Designer.cs">
-      <DependentUpon>201802261906252_d_.cs</DependentUpon>
+    <Compile Include="Migrations\201802262205456_newinit.cs" />
+    <Compile Include="Migrations\201802262205456_newinit.Designer.cs">
+      <DependentUpon>201802262205456_newinit.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201802262011170_d_1.cs" />
-    <Compile Include="Migrations\201802262011170_d_1.Designer.cs">
-      <DependentUpon>201802262011170_d_1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201802262032069_d_3.cs" />
-    <Compile Include="Migrations\201802262032069_d_3.Designer.cs">
-      <DependentUpon>201802262032069_d_3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201802262046242_d_4.cs" />
-    <Compile Include="Migrations\201802262046242_d_4.Designer.cs">
-      <DependentUpon>201802262046242_d_4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201802262104552_d_5.cs" />
-    <Compile Include="Migrations\201802262104552_d_5.Designer.cs">
-      <DependentUpon>201802262104552_d_5.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201802262201030_d_6.cs" />
-    <Compile Include="Migrations\201802262201030_d_6.Designer.cs">
-      <DependentUpon>201802262201030_d_6.cs</DependentUpon>
+    <Compile Include="Migrations\201802262206202_mig200000.cs" />
+    <Compile Include="Migrations\201802262206202_mig200000.Designer.cs">
+      <DependentUpon>201802262206202_mig200000.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AboutModel.cs" />
@@ -350,23 +334,11 @@
     <EmbeddedResource Include="Migrations\201802211506437_initial.resx">
       <DependentUpon>201802211506437_initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802261906252_d_.resx">
-      <DependentUpon>201802261906252_d_.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201802262205456_newinit.resx">
+      <DependentUpon>201802262205456_newinit.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802262011170_d_1.resx">
-      <DependentUpon>201802262011170_d_1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802262032069_d_3.resx">
-      <DependentUpon>201802262032069_d_3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802262046242_d_4.resx">
-      <DependentUpon>201802262046242_d_4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802262104552_d_5.resx">
-      <DependentUpon>201802262104552_d_5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201802262201030_d_6.resx">
-      <DependentUpon>201802262201030_d_6.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201802262206202_mig200000.resx">
+      <DependentUpon>201802262206202_mig200000.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -27,17 +27,18 @@
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
+    </div>  
+    <div class="sidenav">
+        <a href="/Admin/AdminMainPage">Contact Main</a>
+        <a href="/Admin/customerOrderCheck">Customer List</a>
+        <a href="/Admin/aboutView">About Edit</a>
+
     </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
-
     </div>
-    @*<footer class="footerStyle">
 
-        <p>&copy; @DateTime.Now.Year - Thomas Hines Guitars</p>
-        
-    </footer>*@
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

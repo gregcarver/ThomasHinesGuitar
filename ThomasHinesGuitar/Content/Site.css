@@ -1,6 +1,6 @@
 ﻿body {
     padding-top: 50px;
-  
+    font-family: "Chau Philomene One", sans-serif;
     background-color: #FFFACD;
 }
 
@@ -128,4 +128,37 @@ p {
     height: 50%;
     width: 50%;
     background-image: url('Images/facebook.png');
+}
+
+.sidenav {
+    height: 200px; /* Full-height: remove this if you want "auto" height */
+    width: 12%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 80px; /* Stay at the top */
+    left: 12px;
+    background-color: #53392A; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0px;
+    border-radius: 12px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+}
+
+@media screen and (max-height: 450px){
+    .sidenav {padding-top: 5px; width: 10%; height: 150px}
+    .sidenav a{font-size: 18px}
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
 }
