@@ -99,7 +99,7 @@ textarea {
 }
 .jumbotron {
     padding: 30px;
-    height: 100vh;
+    height: 100%;
     color: #DEDCD3;
     font-size: 21px;
     font-weight: 200;
