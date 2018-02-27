@@ -1,0 +1,26 @@
+﻿@model ThomasHinesGuitar.Models.AboutModel
+
+@{
+    ViewBag.Title = "aboutView";
+}
+
+<br />
+<h2>Edit About text here:</h2>
+
+    @using (Html.BeginForm("aboutView" , "Admin"))
+    {
+       
+        <div class="form-group">
+            @Html.TextAreaFor(m => m.aboutView, new { @class = "form-control", style = "rows=100, columns=100"})            
+        </div>
+        
+        <button type="submit" value="Save" class="btn btn-primary">Submit</button>
+    }
+
+    <div>
+        @Html.ActionLink("Back to List", "Index")
+    </div>
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+    }

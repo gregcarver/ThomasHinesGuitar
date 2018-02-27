@@ -20,6 +20,12 @@ namespace ThomasHinesGuitar.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<AdminMain> AdminMain { get; set; }
+
+        public DbSet<CustomerOrder> CustomerOrder { get; set; }
+        
+        public DbSet<AboutModel> AboutModel { get; set; }
+       
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
@@ -27,6 +33,7 @@ namespace ThomasHinesGuitar.Models
 
         public static ApplicationDbContext Create()
         {
+            
             return new ApplicationDbContext();
         }
 

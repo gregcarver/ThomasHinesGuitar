@@ -1,0 +1,22 @@
+﻿@model ThomasHinesGuitar.Models.CustomerOrder
+@{
+    ViewBag.Title = "Customer Order Info";
+}
+<br />
+<h2>Customer Order Info</h2>
+@using (Html.BeginForm("CustomerOrderView", "Admin"))
+{
+    <div class=" =" form-group>
+        @Html.LabelFor(x => x.Name)
+        @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+
+
+    </div>
+    <div class=" =" form-group>
+        @Html.LabelFor(x => x.Email)
+        @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+    </div>
+    
+ 
+    <button type="submit" value="Save" class="btn btn-primary">Submit</button>
+}

@@ -10,16 +10,18 @@ namespace ThomasHinesGuitar.Controllers
 {
     public class HomeController : Controller
     {
+        ApplicationDbContext db = new ApplicationDbContext();
         public ActionResult Index()
         {
             return View();
         }
-
+        [HttpGet]
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
-            return View();
+            var aboutList = db.AboutModel.ToList();
+            return View(aboutList);
+        
         }
 
         [HttpPost]

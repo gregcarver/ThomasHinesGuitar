@@ -184,44 +184,55 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Data\App_Start\BundleConfig.cs" />
-    <Compile Include="App_Data\App_Start\FilterConfig.cs" />
-    <Compile Include="App_Data\App_Start\IdentityConfig.cs" />
-    <Compile Include="App_Data\App_Start\RouteConfig.cs" />
-    <Compile Include="App_Data\App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ContactViewModelsController.cs" />
+    <Compile Include="Controllers\AdminMainController.cs" />
+    <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\AboutModel.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ContactViewModel.cs" />
+    <Compile Include="Models\AdminMain.cs" />
+    <Compile Include="Models\CustomerOrder.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="ViewModels\AdminMainViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\guitar1.jpg" />
     <Content Include="Content\Images\burledwood.jpg" />
     <Content Include="Content\Images\darkwood.jpg" />
     <Content Include="Content\Images\facebook.png" />
     <Content Include="Content\Images\guitar2.jpg" />
     <Content Include="Content\Images\guitar3.jpg" />
+    <Content Include="Content\Images\guitar4.jpg" />
     <Content Include="Content\Images\guitar5.jpg" />
     <Content Include="Content\Images\quiltedmaple.jpg" />
     <Content Include="Content\Images\quiltedmaple2.jpg" />
     <Content Include="Content\Images\quiltedmaple3.jpg" />
     <Content Include="Content\Images\woodbackground.jpg" />
+    <Content Include="Content\Images\guitar6.jpg" />
+    <Content Include="Content\Images\ThomasHines.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
     <Content Include="Images\Polaroid.jpg" />
+    <Content Include="Notes\Admin Group\Database tables needed.txt" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
@@ -279,9 +290,20 @@
     <Content Include="Views\ContactViewModels\Details.cshtml" />
     <Content Include="Views\ContactViewModels\Edit.cshtml" />
     <Content Include="Views\ContactViewModels\Index.cshtml" />
+    <Content Include="Views\Admin\AdminMainPage.cshtml" />
+    <Content Include="Views\CustomerView.cshtml" />
+    <Content Include="Views\Admin\CustomerOrderView.cshtml" />
+    <Content Include="Views\CustomerOrder\CustomerView.cshtml" />
+    <Content Include="Views\Shared\_LayoutAdmin.cshtml" />
+    <Content Include="Views\Admin\AdminLookPage.cshtml" />
+    <Content Include="Views\Admin\AdminCheckPage.cshtml" />
+    <Content Include="Views\Admin\customerOrderCheck.cshtml" />
+    <Content Include="Views\Admin\aboutView.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Start\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="FormViewModels\" />
+    <Folder Include="Views\About\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
