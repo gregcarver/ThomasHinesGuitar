@@ -198,9 +198,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201802271527350_mig2.cs" />
-    <Compile Include="Migrations\201802271527350_mig2.Designer.cs">
-      <DependentUpon>201802271527350_mig2.cs</DependentUpon>
+    <Compile Include="Migrations\201802271705421_trueinit.cs" />
+    <Compile Include="Migrations\201802271705421_trueinit.Designer.cs">
+      <DependentUpon>201802271705421_trueinit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201802271712200_initA.cs" />
+    <Compile Include="Migrations\201802271712200_initA.Designer.cs">
+      <DependentUpon>201802271712200_initA.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AboutModel.cs" />
@@ -323,8 +327,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201802271527350_mig2.resx">
-      <DependentUpon>201802271527350_mig2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201802271705421_trueinit.resx">
+      <DependentUpon>201802271705421_trueinit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201802271712200_initA.resx">
+      <DependentUpon>201802271712200_initA.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

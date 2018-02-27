@@ -20,7 +20,7 @@
                 @Html.ActionLink("Thomas Hines Guitars", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav " >
+                <ul class="nav navbar-nav ">
                     <li style="color:white">@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact Us", "Create", "ContactViewModels")</li>
                 </ul>
@@ -28,16 +28,23 @@
             </div>
         </div>
     </div>
+    <div class="sidenav">
+        <a href="/Admin/AdminMainPage">Contact Main</a>
+        <a href="/Admin/customerOrderCheck">Customer List</a>
+        <a href="/Admin/aboutView">About Edit</a>
+
+    </div>
+
     <div class="container body-content">
         @RenderBody()
         <hr />
 
     </div>
-    @*<footer class="footerStyle">
+    <footer class="footerStyle2">
 
-        <p>&copy; @DateTime.Now.Year - Thomas Hines Guitars</p>
-        
-    </footer>*@
+            <p>&copy; @DateTime.Now.Year - Thomas Hines Guitars</p>
+
+        </footer>
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)

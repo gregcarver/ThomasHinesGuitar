@@ -141,11 +141,13 @@ p {
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 80px; /* Stay at the top */
-    left: 12px;
-    background-color: #53392A; /* Black */
+    left: 0px;
+    /*background-color: #53392A; */
+    background: url("../Content/Images/burledwood3.jpg");
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 0px;
-    border-radius: 12px;
+    border-radius: 0px 12px 12px 0px;
+    
 }
 
 .sidenav a {
@@ -166,4 +168,13 @@ p {
     .sidenav a {
         font-size: 18px
     }
+}
+.footerStyle2 {
+    background: url("../Content/Images/burledwood3.jpg");
+    color: #DEDCD3;
+    height: 50px;
+    line-height: 49px;
+    font-size: 36px;
+    text-align: center;
+    
 }

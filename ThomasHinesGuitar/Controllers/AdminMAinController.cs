@@ -17,6 +17,7 @@ namespace ThomasHinesGuitar.Controllers
         // GET: AdminMAin
 
         [HttpGet]
+        [Authorize]
         public ActionResult AdminMainPage()
         {
             //var mainList = db.AdminMain.ToList();
@@ -24,6 +25,7 @@ namespace ThomasHinesGuitar.Controllers
             return View();
         }
         [HttpGet]
+        [Authorize]
         public ActionResult AdminCheckPage()
         {
             var mainList = db.AdminMain.ToList();
@@ -31,7 +33,7 @@ namespace ThomasHinesGuitar.Controllers
             return View(mainList);
         }
 
-
+        [Authorize]
         [HttpPost]
         public ActionResult AdminMainPage(AdminMain inMain)
         {
