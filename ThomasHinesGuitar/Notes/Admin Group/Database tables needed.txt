@@ -1,2 +1,5 @@
 Database tables needed for
-order options and prices
+	Order options and prices
+	About section text tables
+	Customer Email, Name, and, order number
+	

@@ -1,0 +1,49 @@
+﻿@model IEnumerable<ThomasHinesGuitar.Models.AdminMain>
+
+@{
+    ViewBag.Title = "AdminCheckPage";
+}
+
+<h2>AdminCheckPage</h2>
+
+<p>
+    @Html.ActionLink("Create New", "AdminMainPage")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Contact)
+
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Location) 
+        </th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(model => model.LastOrDefault().Contact)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.LastOrDefault().Location)
+        </td>
+    </tr>
+
+    @*@{
+            var item = Model.LastOrDefault();
+
+
+        }*@
+    @*@foreach (var item in Model) {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Contact)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Location)
+                </td>
+                <td>
+                </td>
+            </tr>
+        }*@
+
+</table>
