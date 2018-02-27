@@ -18,7 +18,7 @@ namespace ThomasHinesGuitar.Controllers
         {
             _context = new ApplicationDbContext();
         }
-
+        [Authorize(Roles = "SuperUser")]
         [HttpGet]
         public ActionResult CustomerOrderView()
         {
@@ -34,17 +34,20 @@ namespace ThomasHinesGuitar.Controllers
             ModelState.Clear();           
             return View();
         }
+        [Authorize(Roles = "SuperUser")]
         [HttpGet]
         public ActionResult customerOrderCheck()
         {
             var customerIDlist = db.CustomerOrder.ToList();
             return View(customerIDlist);
         }
+        [Authorize(Roles = "SuperUser")]
         [HttpGet]
         public ActionResult aboutView()
         {
             return View();
         }
+        [Authorize(Roles = "SuperUser")]
         [HttpPost]
         public ActionResult aboutView(AboutModel aboutobj)
         {

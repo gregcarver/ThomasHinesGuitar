@@ -17,7 +17,7 @@ namespace ThomasHinesGuitar.Controllers
         // GET: AdminMAin
 
         [HttpGet]
-        [Authorize]
+        [Authorize(Roles ="SuperUser")]
         public ActionResult AdminMainPage()
         {
             //var mainList = db.AdminMain.ToList();
@@ -25,7 +25,7 @@ namespace ThomasHinesGuitar.Controllers
             return View();
         }
         [HttpGet]
-        [Authorize]
+        [Authorize(Roles = "SuperUser")]
         public ActionResult AdminCheckPage()
         {
             var mainList = db.AdminMain.ToList();
@@ -33,7 +33,7 @@ namespace ThomasHinesGuitar.Controllers
             return View(mainList);
         }
 
-        [Authorize]
+        [Authorize(Roles = "SuperUser")]
         [HttpPost]
         public ActionResult AdminMainPage(AdminMain inMain)
         {

@@ -36,8 +36,9 @@ namespace ThomasHinesGuitar
                 //Here we create a Admin super user who will maintain the website                  
 
                 var user = new ApplicationUser();
+                // Since Entity 2.0 these must be the same.
                 user.Email = "patherizerator@pathmail.com";
-                user.UserName = user.Email;
+                user.UserName = "patherizerator@pathmail.com";
 
                 string userPWD = "!Qaz2wsx";
 
