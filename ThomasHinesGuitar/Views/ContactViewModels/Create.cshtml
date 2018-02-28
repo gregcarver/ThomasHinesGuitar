@@ -14,7 +14,7 @@
         <div class="col-lg-6" style="float: left">
             <div>
                 <address style="float: left; padding-right: 50px;">
-                    <iframe width="500" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=219%20Belleville%20Ave%2C%20Brewton%2C%20AL%2036426&key=AIzaSyCBUlPO5q8kIbyPKmcc5eD9BadAvijMZw4" allowfullscreen></iframe><br />
+                    <iframe width="500" height="450" frameborder="0" style="border:5px" src="https://www.google.com/maps/embed/v1/place?q=219%20Belleville%20Ave%2C%20Brewton%2C%20AL%2036426&key=AIzaSyCBUlPO5q8kIbyPKmcc5eD9BadAvijMZw4" allowfullscreen></iframe><br />
                 </address>
 
                 <div>
@@ -67,7 +67,7 @@
                     <div class="form-group">
                         @Html.LabelFor(model => model.Message, htmlAttributes: new { @class = "control-label col-md-2" })
                         <div class="col-md-10">
-                            @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "form-control", @style="height: 250px" } })
                             @*@Html.TextAreaFor(model => model.Message, 10, 80, new { htmlAttributes = new { @class = "form-control" } })*@
                             @*@Html.EditorFor(model => model.Message, new { htmlAttributes = new { @class = "long-text-editor" } })*@
                             @Html.ValidationMessageFor(model => model.Message, "", new { @class = "text-danger" })
@@ -87,7 +87,6 @@
                     </div>*@
             </div>
         </div>
-
     </div>
 
 }
