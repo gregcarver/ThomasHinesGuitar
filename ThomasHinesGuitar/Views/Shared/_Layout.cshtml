@@ -29,17 +29,17 @@
             </div>
         </div>
     </div>
-    <div class="container body-content">
+    <div class="container body-content" style="margin-bottom: 100px">
         @RenderBody()
         @*<hr />*@
 
     </div>
-    <footer class="footerStyle">
+    <footer class="footerStyle2" style="position: fixed;bottom: 0;width: 100%">
 
         <p>
             <div>
                 &copy; @DateTime.Now.Year - Thomas Hines Guitars
-                @Html.Partial("_LoginPartial", new { @style = "line-height: 125px; color: #dedcd3;" })
+                @Html.Partial("_LoginPartial", new { @style = "line-height: 50px; color: #dedcd3;" })
             </div>
             
         </p>
