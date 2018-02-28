@@ -2,40 +2,31 @@
 @{
     ViewBag.Title = "About";
 }
-
-
-<p></p>
-<div class="w3 row">
-    <br />
-    <h1>About Thomas Hines</h1>
-
+<div class="containerAbout" style="margin-top:50px; background-color:transparent">
     <div class="col-lg-5">
-
-        <img src="~/Content/Images/aboutpicture.jpg" alt="Pic" style="width:450px" align="left" />
-        </>
+        <div class="containerIMG" style="background-color:white; border-radius:20px; text-align:center">
+            <img src="~/Content/Images/aboutpicture.jpg" style="height:95%; width:95%; text-align:center; margin-top:20px; margin-bottom:85px" />
+        </div>
         <div class="w3-container">
         </div>
 
-        <div style="padding-top: 600px">
-            @* Will replace with dynamic entry later on.*@
-           @Html.DisplayFor(x => x.LastOrDefault().aboutView)
+        <div>
+            <h2 style="text-align:center">About Thomas Hines</h2>
+            Thomas Hines has been making guitars for 10 years.  He has done this in a local shop.  He used to play bass in a band.  He plays bass and guitar.
         </div>
-
     </div>
-
-    <div class="col-lg-5">
+    <div class="col-lg-2">
     </div>
-
     <div class="col-lg-7">
-
         <script src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&amp;version=v2.5"
                 async align="right"></script>
         <div class="fb-page"
              align="right"
              data-tabs="timeline,events,messages"
              data-href="https://www.facebook.com/Thomas-Hines-Guitars-167544839961266/"
-             data-height="1000"
+             data-height="830"
              data-width="1080">
         </div>
     </div>
 </div>
+
