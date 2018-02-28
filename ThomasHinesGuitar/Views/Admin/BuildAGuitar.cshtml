@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "BuildAGuitar";
+}
+
+<h2 style="margin-top: 50px; margin-left: 96px">Send e-mail to musiclover031969@yahoo.com:</h2>
+<div class="row">
+    <div class="col-lg-1">
+    </div>
+    <div class="col-lg-4">
+        <form action="mailto:musiclover031969@yahoo.com" method="post" enctype="text/plain" style="margin-bottom: 50px">
+        Name:<br>
+        <input class="form-control" style="width: 400px" type="text" name="Name " placeholder="Type name here"><br>
+        E-mail:<br>
+        <input class="form-control" style="width: 400px" type="text" name="Email " placeholder="Please enter Email here"><br>
+        Phone Number:<br />
+        <input class="form-control" style="width: 400px" type="Text" name="Phone Number " placeholder="(area) xxx-xxxx"><br />
+        Type of Instrument:<br />
+        <input class="form-control" style="width: 400px" type="Text" name="Instrument " placeholder=" Guitar, bass or mandolin"><br />
+        Body Style:<br />
+        <input class="form-control" style="width: 400px" type="Text" name="Body Style " placeholder="S, T, LP, double cut"><br />
+        Type of Wood for Body:<br />
+        <input class="form-control" style="width: 400px" type="Text" name="Body Wood " placeholder="mahogany, maple, walnut"><br />
+        Type of Wood for Top:<br />
+        <input class="form-control" style="width: 400px" type="Text" name="Top Wood " placeholder="maple, spruce, walnut, other"><br />
+        Type of Wood for Neck:<br />
+        <input class="form-control" style="width: 400px" type="Text" name=" Neck Wood " placeholder="maple, mahogany"><br />
+        Comments:<br>
+        <input class="form-control" style="width:400px;height:48px"type="text" name="Comments " size="50"><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+        </form>
+
+    </div>
+    <div class="col-md-7">
+    <img  src="~/Content/Images/guitar6.jpg" style="height: 300px; float: right; margin-top: 4%" />
+    </div>
+
+</div>

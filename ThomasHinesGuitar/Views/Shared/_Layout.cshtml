@@ -25,7 +25,7 @@
                     <li style="color:white">@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact Us", "Create", "ContactViewModels")</li>
                 </ul>
-                @Html.Partial("_LoginPartial")
+                
             </div>
         </div>
     </div>
@@ -36,7 +36,13 @@
     </div>
     <footer class="footerStyle">
 
-        <p>&copy; @DateTime.Now.Year - Thomas Hines Guitars</p>
+        <p>
+            <div>
+                &copy; @DateTime.Now.Year - Thomas Hines Guitars
+                @Html.Partial("_LoginPartial", new { @style = "line-height: 125px; color: #dedcd3;" })
+            </div>
+            
+        </p>
         
     </footer>
     @Scripts.Render("~/bundles/jquery")
