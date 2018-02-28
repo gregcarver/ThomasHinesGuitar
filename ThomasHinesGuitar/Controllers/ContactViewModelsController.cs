@@ -127,7 +127,7 @@ namespace ThomasHinesGuitar.Controllers
                     MailMessage msz = new MailMessage();
                     msz.From = new MailAddress(vm.Email);//Email which you are getting 
                                                          //from contact us page 
-                    msz.To.Add("keelan.burnhamprovalus@gmail.com");//Where mail will be sent 
+                    msz.To.Add("thomashines1981@gmail.com");//Where mail will be sent 
                     msz.Subject = vm.Subject;
                     msz.Body = vm.Message;
                     SmtpClient smtp = new SmtpClient();
