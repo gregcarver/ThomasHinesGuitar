@@ -2,6 +2,7 @@
 
 @{
     ViewBag.Title = "aboutView";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
 <br />
@@ -17,9 +18,9 @@
         <button type="submit" value="Save" class="btn btn-primary">Submit</button>
     }
 
-    <div>
+    @*<div>
         @Html.ActionLink("Back to List", "Index")
-    </div>
+    </div>*@
 
     @section Scripts {
         @Scripts.Render("~/bundles/jqueryval")
