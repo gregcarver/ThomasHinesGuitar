@@ -217,6 +217,7 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\aboutpicture.jpg" />
     <Content Include="Content\Images\guitar1.jpg" />
     <Content Include="Content\Images\burledwood.jpg" />
     <Content Include="Content\Images\darkwood.jpg" />
@@ -303,6 +304,7 @@
     <Content Include="Views\Admin\AdminCheckPage.cshtml" />
     <Content Include="Views\Admin\customerOrderCheck.cshtml" />
     <Content Include="Views\Admin\aboutView.cshtml" />
+    <Content Include="Views\Admin\BuildAGuitar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
