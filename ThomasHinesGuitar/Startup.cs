@@ -37,8 +37,8 @@ namespace ThomasHinesGuitar
 
                 var user = new ApplicationUser();
                 // Since Entity 2.0 these must be the same.
-                user.Email = "patherizerator@pathmail.com";
-                user.UserName = "patherizerator@pathmail.com";
+                user.Email = "root@root.com";
+                user.UserName = "root@root.com";
 
                 string userPWD = "!Qaz2wsx";
 

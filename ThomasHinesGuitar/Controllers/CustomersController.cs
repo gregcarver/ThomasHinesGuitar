@@ -12,8 +12,8 @@ namespace ThomasHinesGuitar.Controllers
     public partial class AdminController : Controller
     {
         private ApplicationDbContext _context;
+        
         // GET: AdminMAin
-        //private ApplicationDbContext db = new ApplicationDbContext();
         public AdminController()
         {
             _context = new ApplicationDbContext();

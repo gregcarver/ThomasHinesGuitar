@@ -8,6 +8,7 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-10">
+            @* Create a form to pass info from the view to the controller. *@
             @using (Html.BeginForm("AdminMainPage", "Admin"))
             {
                 <h2>AdminMainPage</h2>
@@ -21,6 +22,7 @@
                     @Html.TextBoxFor(m => m.Location, new { @class = "form-control" })
 
                 </div>
+                @* Submits the info entered to the controller to be pushed to the database. *@
                 <button type="submit" value="Save" class="btn btn-primary">Submit</button>
 
             }
@@ -28,13 +30,3 @@
 
     </div>
 </div>
-
-@*@{
-        if (ViewData["Result"] != "" && ViewData["Result"] != null)
-        {
-            ViewData["Result"] = null;
-            <script type="text/javascript" language="javascript">
-                        alert("Details saved Successfully");
-            </script>
-            }
-    }*@

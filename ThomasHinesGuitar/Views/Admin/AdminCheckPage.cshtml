@@ -9,6 +9,7 @@
 <p>
     @Html.ActionLink("Create New", "AdminMainPage")
 </p>
+@* This view is to check that we can access the last field of a database. *@
 <table class="table">
     <tr>
         <th>
@@ -21,29 +22,12 @@
     </tr>
     <tr>
         <td>
+            @* Returns the last entry of the database to the view. *@
             @Html.DisplayFor(model => model.LastOrDefault().Contact)
         </td>
         <td>
             @Html.DisplayFor(model => model.LastOrDefault().Location)
         </td>
     </tr>
-
-    @*@{
-            var item = Model.LastOrDefault();
-
-
-        }*@
-    @*@foreach (var item in Model) {
-            <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Contact)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Location)
-                </td>
-                <td>
-                </td>
-            </tr>
-        }*@
 
 </table>
