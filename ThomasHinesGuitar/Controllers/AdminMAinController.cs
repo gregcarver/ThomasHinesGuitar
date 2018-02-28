@@ -55,6 +55,10 @@ namespace ThomasHinesGuitar.Controllers
             }
             return View();
         }
+        public ActionResult BuildAGuitar()
+        {
+            return View();
+        }
 
     }
 }
