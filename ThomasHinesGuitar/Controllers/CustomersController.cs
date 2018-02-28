@@ -58,6 +58,24 @@ namespace ThomasHinesGuitar.Controllers
             string result = about.insertAboutView(aboutobj);
             return View();
         }
+        public ActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Create([Bind(Include = "Id,Name,Email,dateAdded")] CustomerOrder customer)
+        {
+            if (ModelState.IsValid)
+            {
+                db.CustomerOrder.Add(customer);
+                db.SaveChanges();
+                return RedirectToAction("customerOrderCheck");
+            }
+
+            return View(customer);
+        }
+
         public ActionResult Edit(int? id)
         {
             if (id == null)
