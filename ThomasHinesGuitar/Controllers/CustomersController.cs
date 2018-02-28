@@ -73,8 +73,9 @@ namespace ThomasHinesGuitar.Controllers
                 return RedirectToAction("customerOrderCheck");
             }
 
-            return View(customer);
+            return RedirectToAction("customerOrderCheck");
         }
+
 
         public ActionResult Edit(int? id)
         {
@@ -99,7 +100,7 @@ namespace ThomasHinesGuitar.Controllers
                 db.SaveChanges();
                 return RedirectToAction("customerOrderCheck");
             }
-            return View(customer);
+            return RedirectToAction("customerOrderCheck");
         }
 
 
